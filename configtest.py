@@ -1,0 +1,11 @@
+import configparser
+config = configparser.ConfigParser()
+config.read('dbconfig.conf')
+db='TESTDB'
+host = config[db]['host']
+#print(host)
+port = config[db]['port']
+user = config[db]['user']
+passwd = config[db]['passwd']
+db_name = config[db]['db']
+charset = config[db]['charset']
